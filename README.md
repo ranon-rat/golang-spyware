@@ -8,7 +8,7 @@ I don't take care of what they do with it
 <h3>how to use it </h3>
 1- change the name of the programm for dont be obvious 
 
-2- you need to open the shell startup window and for that you need to use the command 
+<p>2- you need to open the shell startup window and for that you need to use the command </p>
 ```shell
 shell:startup
 ```
