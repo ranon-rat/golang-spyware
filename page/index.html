@@ -1,24 +1,39 @@
 <!DOCTYPE html>
-<htm>
+<html>
     <head>
         <title>
             ranon spyware
         </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
     </head>
+   
     <body>
-        <p>
-            <img src="" id="añañin"/>
-        </p>
-        <script>
 
-            let url=window.location.href +"image"
-            console.log(url)
-            
-           document.getElementById("añañin").src=url;
-           setTimeout(()=> {window.location.reload();},800)
-            
+        <p>
+            <img  src=""id="sc"/>
+        </p>
+        <script >
+
+            (function(){
+
+            $(document).ready(function() {  
+                
+                $("#screena").attr("src",window.location.href+"image");
+
+       
+    
+            });
+            console.dir(window.location.href+"image")
+            let time=setInterval(function() {
+                let url=window.location.href +"image/{"
+                let random = Math.ceil(Math.random()*100);
+                document.querySelector("#sc").src=`${url+random}}`
+                        
+            },500);
+
+            }
+            )();
         </script>
     </body>
-
-
-</htm>
+</html>
