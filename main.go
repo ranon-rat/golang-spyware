@@ -16,15 +16,10 @@ func sendI(w http.ResponseWriter, r *http.Request) {
 		bounds := screenshot.GetDisplayBounds(i)
 		img, _ := screenshot.CaptureRect(bounds)
 		buffer := new(bytes.Buffer)
-		if err := png.Encode(buffer, img); err != nil {
-
-		}
+		png.Encode(buffer, img)
 		w.Header().Set("Content-Type", "image/jpeg")
 		w.Header().Set("Content-Length", strconv.Itoa(len(buffer.Bytes())))
-		if _, err := w.Write(buffer.Bytes()); err != nil {
-
-		}
-
+		w.Write(buffer.Bytes())
 	}
 }
 func main() {
